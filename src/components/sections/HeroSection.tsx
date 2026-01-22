@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Gamepad2, MessageSquare } from "lucide-react";
+import { ParticleBackground } from "@/components/ParticleBackground";
 import heroBg from "@/assets/hero-bg.jpg";
 
 export const HeroSection = () => {
@@ -14,8 +15,11 @@ export const HeroSection = () => {
         <div className="absolute inset-0 bg-background/70" />
       </div>
 
+      {/* Particle Animation */}
+      <ParticleBackground />
+
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-mesh opacity-50" />
+      <div className="absolute inset-0 bg-gradient-mesh opacity-50 pointer-events-none" />
 
       {/* Content */}
       <div className="container relative z-10 text-center py-20 pt-32">
