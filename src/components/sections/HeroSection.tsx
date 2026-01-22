@@ -30,15 +30,15 @@ export const HeroSection = () => {
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-display leading-tight">
-            <span className="text-foreground">Crafting </span>
-            <span className="text-gradient">Innovative Games</span>
-            <br />
-            <span className="text-foreground">& Interactive Experiences</span>
+            <span className="text-foreground">Where </span>
+            <span className="text-gradient">Code</span>
+            <span className="text-foreground"> Meets </span>
+            <span className="text-gradient">Creativity</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Bakes and Takes — Where creativity meets cutting-edge technology. 
-            We build immersive mobile experiences that push the boundaries of gameplay.
+            Bakes and Takes — Crafting innovative games and intelligent experiences 
+            that push the boundaries of interactive play.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
