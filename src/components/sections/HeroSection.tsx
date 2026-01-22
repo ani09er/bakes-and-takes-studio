@@ -2,9 +2,24 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Gamepad2, MessageSquare } from "lucide-react";
 import { ParticleBackground } from "@/components/ParticleBackground";
+import { useTypewriter } from "@/hooks/useTypewriter";
 import heroBg from "@/assets/hero-bg.jpg";
 
+const taglines = [
+  "Where Code Meets Creativity.",
+  "Designing the Future of Interactive Play.",
+  "Innovative Games. Intelligent Experiences.",
+  "Time. Logic. Play.",
+];
+
 export const HeroSection = () => {
+  const displayText = useTypewriter({
+    texts: taglines,
+    typingSpeed: 80,
+    deletingSpeed: 40,
+    pauseDuration: 2500,
+  });
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -29,11 +44,9 @@ export const HeroSection = () => {
             Independent Game Studio
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-display leading-tight">
-            <span className="text-foreground">Where </span>
-            <span className="text-gradient">Code</span>
-            <span className="text-foreground"> Meets </span>
-            <span className="text-gradient">Creativity</span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-display leading-tight min-h-[1.2em]">
+            <span className="text-gradient">{displayText}</span>
+            <span className="inline-block w-[3px] h-[0.9em] bg-primary ml-1 animate-pulse" />
           </h1>
 
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
