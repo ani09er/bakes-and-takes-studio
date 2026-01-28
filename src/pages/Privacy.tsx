@@ -305,7 +305,7 @@ const Privacy = () => {
                     <span className="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center">
                       <Mail size={16} className="text-primary" />
                     </span>
-                    <a href="mailto:contact@bakesandtakes.com" className="text-primary hover:underline">contact@bakesandtakes.com</a>
+                    <a href="mailto:bakesntakes98@gmail.com" className="text-primary hover:underline">bakesntakes98@gmail.com</a>
                   </p>
                   <p className="flex items-center gap-3 text-muted-foreground">
                     <span className="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center">
